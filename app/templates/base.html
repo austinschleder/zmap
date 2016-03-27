@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      table, th, td, tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>ZMAP</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>
+      ZMAP: 
+      <a href="/index">Home</a> | 
+      <a href="/draft">Draft Prep</a> | 
+      <a href="/managers">Managers</a> | 
+      <a href="/standings">Standings</a>
+    </div>
+    <hr>
+    {% block content %} {% endblock %}
+  </body>
+</html>
