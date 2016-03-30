@@ -82,7 +82,9 @@ def manager_chris():
                            data = manager_data)
 
 
-
+@app.route('/dominos')
+def dominos():
+    return "Yeah, OK. Domino's is cool with me."
 
 
 
