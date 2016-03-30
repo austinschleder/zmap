@@ -2,9 +2,7 @@
 {% block content %}
 
   <h1>{{ data[1] }}</h1>
-  <img src='../static/pokemon_{{ data[7] }}.png' alt="D'oh!" width='300' height='400' style='float:left'>
-
-
+  
   <pre style='font-size:125%;'><strong>Roster:
   1/ {{ data[2] }}
   2/ -- Not drafted yet --
@@ -12,6 +10,9 @@
   4/ -- Not drafted yet --
   5/ -- Not drafted yet --
   </strong></pre>
+
+  <img src='../static/pokemon_{{ data[7] }}.png' alt="D'oh!" width='300' height='400' style='float:left'>
+
   <p><strong>Pokemon Doppleganger:</strong> {{ data[7] }}</p>
   <p><strong>Team:</strong> {{ data[2] }}</p>
   <p><strong>Hometown:</strong> {{ data[3] }}</p>
