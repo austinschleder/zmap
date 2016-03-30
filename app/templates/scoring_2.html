@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block two_bar %}
+
+	<div>
+      Managers:
+      {% for name in manager_names %} 
+      | <a href="/{{ name }}">{{ name }}</a> 
+      {% endfor %}
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+
+{% endblock %}

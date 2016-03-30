@@ -3,13 +3,22 @@
     <style>
       body{
         font-family: courier;
-        background-color: lightgray;
+        background-color: rgb(150, 150, 150);
       }
-      table, th, td, tr {
+      table, td, tr {
+        background-color: white;
         border: 1px solid black;
         border-collapse: collapse;
         text-align: center;
-        padding: 15px;
+        padding: 5px;
+      }
+      th {
+        background-color: gray;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-size:100%;
+        padding: 5px;
       }
     </style>
     {% if title %}
@@ -25,7 +34,8 @@
       <a href="/scoring">Scoring</a> |
       <a href="/draft">Draft Prep</a> | 
       <a href="/managers">Managers</a> | 
-      <a href="/standings">Standings</a>
+      <a href="/standings">Standings</a> |
+      <a href="/updates">Updates</a>
     </div>
     <hr>
     {% block content %} {% endblock %}

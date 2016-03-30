@@ -2,12 +2,24 @@
 {% block content %}
 
   <h1>{{ data[1] }}</h1>
-  <p>Team: {{ data[2] }}</p>
-  <p>Hometown: {{ data[3] }}</p>
-  <p>Strength: {{ data[4] }}</p>
-  <p>Weakness: <del>Drinking in moderation</del> {{ data[5] }}</p>
-  <p>Catchphrase: {{ data[6] }}</p>
-  <p>Strategy (fantasy baseball): {{ data[7] }}</p>
-  <p>Strategy (life): {{ data[8] }}</p>
+  <img src='../static/pokemon_{{ data[7] }}.png' alt="D'oh!" width='300' height='400' style='float:left'>
+
+
+  <pre style='font-size:125%;'><strong>Roster:
+  1/ {{ data[2] }}
+  2/ -- Not drafted yet --
+  3/ -- Not drafted yet --
+  4/ -- Not drafted yet --
+  5/ -- Not drafted yet --
+  </strong></pre>
+  <p><strong>Pokemon Doppleganger:</strong> {{ data[7] }}</p>
+  <p><strong>Team:</strong> {{ data[2] }}</p>
+  <p><strong>Hometown:</strong> {{ data[3] }}</p>
+  <p><strong>Strength:</strong> {{ data[4] }}</p>
+  <p><strong>Weakness:</strong> <del>Drinking in moderation</del> {{ data[5] }}</p>
+  <p><strong>Catchphrase:</strong> {{ data[6] }}</p>
+  <p><strong>Strategy (fantasy baseball):</strong> {{ data[8] }}</p>
+  <p><strong>Strategy (life):</strong> {{ data[9] }}</p>
+
   
 {% endblock %}

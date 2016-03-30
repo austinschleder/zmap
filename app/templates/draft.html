@@ -1,29 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Team Overview</h1>
+
+<h4>Q: "How do I use this cheatsheet?"
+<br>A: Figure out what kind of teams you like, then look up that info in the table.</h4>
+<h4>Q: "I still don't understand."
+<br>A: Look at the examples below. Also, that's not a question.</h4>
+
 <table>
-  <tr style='color:black; background-color:gray; font-size:125%; font-family:courier;'>
-    <td>{{ header[4] }}</td>
-    <td>{{ header[6] }}</td>
-    <td>{{ header[7] }}</td>
-    <td>{{ header[8] }}</td>
-    <td>{{ header[9] }}</td>
-    <td>{{ header[10] }}</td>
-    <td>{{ header[11] }}</td>
-    <td>{{ header[12] }}</td>
-    <td>{{ header[13] }}</td>
-    <td>{{ header[14] }}</td>
-    <td>{{ header[15] }}</td>
-    <td>{{ header[16] }}</td>
+  <tr>
+    <th>{{ header[4] }}</th>
+    <th>{{ header[6] }}</th>
+    <th>{{ header[7] }}</th>
+    <th>{{ header[8] }}</th>
+    <th>{{ header[9] }}</th>
+    <th>{{ header[10] }}</th>
+    <th>{{ header[11] }}</th>
+    <th>{{ header[12] }}</th>
+    <th>{{ header[13] }}</th>
+    <th>{{ header[14] }}</th>
+    <th>{{ header[15] }}</th>
+    <th>{{ header[16] }}</th>
   </tr>
   {% for team in teams %}
   <tr>
-    <td style='color:{{ team[0] }}; background-color:{{ team[1] }}; font-size:125%; font-family:courier;'>{{ team[3] }}<br>{{team[4] }}</td>
+    <td style='color:{{ team[0] }}; background-color:{{ team[1] }}; font-size:125%;'>{{ team[3] }}<br>{{team[4] }}</td>
     <td>{{ team[5] }}<br>{{ team[6] }}</td>
     <td>{{ team[7] }}</td>
     <td>{{ team[8] }}</td>
     <td>{{ team[9] }}</td>
-    <td><img src='static/stars_{{ team[10] }}.png' alt={{ team[10] }} height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[10] }}.png' alt='{{ team[10] }}' height='20' width='66'></td>
     <td><img src='static/stars_{{ team[11] }}.png' alt='{{ team[11] }}' height='20' width='66'></td>
     <td><img src='static/stars_{{ team[12] }}.png' alt='{{ team[12] }}' height='20' width='66'></td>
     <td><img src='static/stars_{{ team[13] }}.png' alt='{{ team[13] }}' height='20' width='66'></td>
@@ -33,4 +39,37 @@
   </tr>
   {% endfor %}
 </table>
+
+<h4>Examples:</h4>
+<p><strong>I like to watch strong men hit baseballs into the stratosphere.</strong>
+<br>Choose teams that have high scores (3 or 4 stars) in the "Power" column. 
+<br>(Sample roster: Blue Jays, Orioles, Astros, Rockies, Reds)</p>
+
+<p><strong>I like to watch dominant pitching performances because I'm a snooty purist.</strong>
+<br>Choose teams that have high scores (3 or 4 stars) in the "Pitching" column. 
+<br>(Sample roster: Mets, Dodgers, Indians, Mariners, Padres)</p>
+
+<p><strong>I want to watch teams that will be relevant in the playoffs.</strong>
+<br>Choose teams that have high scores (3 or 4 stars) in the "Success" column. 
+<br>(Sample roster: Nationals, Cardinals, Rangers, Yankees, Red Sox)</p>
+
+<p><strong>I like to watch good fundamental defense because my dad says defense wins championships.</strong>
+<br>Choose teams that have high scores (3 or 4 stars) in the "Fielding" column. Also, tune in to the WNBA from June-October!
+<br>(Sample roster: Royals, Giants, Rays, Marlins, Angels)</p>
+
+<p><strong>I like to watch one player carry the team because I'm a millenial who only cares about personal glory.</strong>
+<br>Choose teams that have high scores (3 or 4 stars) in the "Superstar" column. 
+<br>(Sample roster: Clayton Kershaw, Chris Sale, Mike Trout, Giancarlo Stanton+Jose Fernandez, Zack Greinke+Paul Goldschmidt)</p>
+
+<p><strong>I care too much about aesthetics and want all my teams to match.</strong>
+<br>Choose Red+Blue teams. These is by far the most common color scheme in the MLB.
+<br>(Sample roster: Cubs, Red Sox, Indians, Rangers, Braves)</p>
+
+<p><strong>I lead a busy life and don't have time to watch teams that aren't in primetime.</strong>
+<br>Focus on teams in your time zone. If you're on the East Coast, Pacific teams usually won't start until 10PM EST. If you're on the West Coast, Eastern teams will usually start at 4PM PST. If you don't plan to actually watch any games this year, you're a terrible person and you can ignore this.</p>
+
+<p><strong>I'll watch my favorite team sometimes, but I'm probably not going to watch any other games.</strong>
+<br>Choose teams from the same division as your favorite team. You'll play these opponents more often during the season, so there's a greater likelihood you'll get to see your teams in action, without even trying.</p>
+
+
 {% endblock %}

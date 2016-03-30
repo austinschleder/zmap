@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% block content %}
-  <h1>Scoring Events</h1>
+<h1>Scoring Events</h1>
   <h3>Batting</h3>
   {% for event in events %}
     {% if event[0] == 'Batting' %}
@@ -12,6 +12,35 @@
   {% for event in events %}
     {% if event[0] == 'Baserunning' %}
       <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+      <br>
     {% endif %}
   {% endfor %}
+  <h3>Pitching</h3>
+  {% for event in events %}
+    {% if event[0] == 'Pitching' %}
+      <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+      <br>
+    {% endif %}
+  {% endfor %}
+  <h3>Fielding</h3>
+  {% for event in events %}
+    {% if event[0] == 'Fielding' %}
+      <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+      <br>
+    {% endif %}
+  {% endfor %}
+  <h3>End-of-Season</h3>
+  {% for event in events %}
+    {% if event[0] == 'End of Season' %}
+      <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+      <br>
+    {% endif %}
+  {% endfor %}
+  <h3>Bonus</h3>
+  {% for event in events %}
+    {% if event[0] == 'Bonus' %}
+      <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+      <br>
+    {% endif %}
+    {% endfor %}
 {% endblock %}
