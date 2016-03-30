@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1>{{ data[1] }}</h1>
+  <p>Team: {{ data[2] }}</p>
+  <p>Hometown: {{ data[3] }}</p>
+  <p>Strength: {{ data[4] }}</p>
+  <p>Weakness: <del>Drinking in moderation</del> {{ data[5] }}</p>
+  <p>Catchphrase: {{ data[6] }}</p>
+  <p>Strategy (fantasy baseball): {{ data[7] }}</p>
+  <p>Strategy (life): {{ data[8] }}</p>
+  
+{% endblock %}

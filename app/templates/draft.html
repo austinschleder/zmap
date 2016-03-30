@@ -2,18 +2,34 @@
 {% block content %}
 <h1>Team Overview</h1>
 <table>
-  <tr>
-    <th>Team</th>
-    <th>Power</th>
-    <th>Speed</th>
-    <th>Pitching</th>
+  <tr style='color:black; background-color:gray; font-size:125%; font-family:courier;'>
+    <td>{{ header[4] }}</td>
+    <td>{{ header[6] }}</td>
+    <td>{{ header[7] }}</td>
+    <td>{{ header[8] }}</td>
+    <td>{{ header[9] }}</td>
+    <td>{{ header[10] }}</td>
+    <td>{{ header[11] }}</td>
+    <td>{{ header[12] }}</td>
+    <td>{{ header[13] }}</td>
+    <td>{{ header[14] }}</td>
+    <td>{{ header[15] }}</td>
+    <td>{{ header[16] }}</td>
   </tr>
   {% for team in teams %}
   <tr>
-    <td>{{ team[0] }}</td>
-    <td>{{ team[1] }}</td>
-    <td>{{ team[2] }}</td>
-    <td>{{ team[3] }}</td>
+    <td style='color:{{ team[0] }}; background-color:{{ team[1] }}; font-size:125%; font-family:courier;'>{{ team[3] }}<br>{{team[4] }}</td>
+    <td>{{ team[5] }}<br>{{ team[6] }}</td>
+    <td>{{ team[7] }}</td>
+    <td>{{ team[8] }}</td>
+    <td>{{ team[9] }}</td>
+    <td><img src='static/stars_{{ team[10] }}.png' alt={{ team[10] }} height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[11] }}.png' alt='{{ team[11] }}' height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[12] }}.png' alt='{{ team[12] }}' height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[13] }}.png' alt='{{ team[13] }}' height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[14] }}.png' alt='{{ team[14] }}' height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[15] }}.png' alt='{{ team[15] }}' height='20' width='66'></td>
+    <td><img src='static/stars_{{ team[16] }}.png' alt='{{ team[16] }}' height='20' width='66'></td>
   </tr>
   {% endfor %}
 </table>

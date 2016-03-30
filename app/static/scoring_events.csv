@@ -1,0 +1,25 @@
+Category,Event,Points,Description
+Batting,Strikeout,-1,Batter strikes out (includes dropped-third-strike calls)
+Batting,Hit By Pitch,+10,Batter is hit by a pitch
+Batting,Home Run,+10,Batter hits a home run (includes inside-the-park home runs)
+Batting,Triple,+50,Batter reaches 3B on a hit (includes runners thrown out trying to stretch at home; does not include runners who reach 3B on an error)
+Baserunning,Stolen Base,+5,Runner successfully steals a base (does not include Fielders Indifference)
+Pitching,Strikeout,+1,Pitcher strikes out a batter (includes dropped-third-strike calls)
+Pitching,Hit Batter,+10,Pitcher hits a batter with a pitch
+Pitching,Quality Start,+5,Pitcher surrenders 3 or fewer Earned Runs and pitches 6 or more complete innings in a single start
+Fielding,Error,-5,Fielder is charged with an error (includes fielding and throwing errors)
+Fielding,Double Play,+10,Two players are retired on the same play
+Fielding,Triple Play,+100,Three players are retired on the same play
+Fielding,Caught Stealing,+15,Runner is thrown out attempting to steal a base
+Fielding,Pick-off,+15,Runner is caught taking a lead and forced out (either at the previous base or the next base)
+Bonus,Cycle,+1000,"Batter hits a single, double, triple, and home run in the same game."
+Bonus,Inside-the-Park Home Run,+500,Batter hits a home run that doesn’t leave the field of play (does not include plays with errors)
+Bonus,Triple-Double,+100,Batter hits three doubles in a single game
+Bonus,Double-Triple,+200,Batter hits two triples in a single game
+Bonus,10+ Runs,+50,Team scores 10 or more runs in a game (including extra innings)
+Bonus,Shutout,+100,Team does not allow any runs in a game (including extra innings)
+Bonus,Extra Innings,+50,Team plays a game that is tied at the end of regulation
+Bonus,Walkoff,+50,Home team takes the lead in the 9th inning or later
+End-of-Season,Division Crown,+500,Team wins their division
+End-of-Season,Wildcard Berth,+250,Team wins a wildcard berth
+End-of-Season,Cellar Dweller,+500,Team finishes at the bottom of their division

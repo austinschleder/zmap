@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1>Managers:</h1>
+
+  {% for name in manager_names %}
+    <a href='/managers/{{ name }}'>{{ name }}</a>
+    <br>
+  {% endfor %}
+
+{% endblock %}

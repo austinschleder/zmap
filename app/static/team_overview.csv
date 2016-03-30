@@ -1,0 +1,31 @@
+Text Color,Background Color,Code,City,Team,League,Division,Time Zone,Ballpark,Overall,Fantasy,Success,Super Stars,Power,Speed,Pitching,Fielding
+red,blue,CHC,Chicago,Cubs,NL,Central,Central,Balanced,3.6,4,4,3,3,3,4,4
+red,black,ARI,Arizona,Diamondbacks,NL,West,Mountain,Hitting,3.4,4,3,4,2,4,3,4
+orange,navy,HOU,Houston,Astros,AL,West,Central,Balanced,3.1,3,3,3,4,4,2,3
+blue,gray,LAD,Los Angeles,Dodgers,NL,West,Pacific,Pitching,3.1,3,4,4,4,1,4,2
+orange,black,SF,San Francisco,Giants,NL,West,Pacific,Pitching,3.1,3,4,4,1,3,3,4
+orange,blue,NYM,New York,Mets,NL,East,Eastern,Pitching,3.1,3,4,4,3,1,4,3
+red,darkblue,BOS,Boston,Red Sox,AL,East,Eastern,Hitting,3.0,4,4,3,3,2,3,2
+red,darkblue,CLE,Cleveland,Indians,AL,Central,Eastern,Balanced,2.9,1,3,3,2,4,4,3
+teal,black,MIA,Miami,Marlins,NL,East,Eastern,Balanced,2.9,3,2,3,1,4,3,4
+blue,lightblue,KC,Kansas City,Royals,AL,Central,Central,Balanced,2.9,3,4,2,2,4,1,4
+lightblue,blue,TOR,Toronto,Blue Jays,AL,East,Eastern,Hitting,2.7,3,4,4,4,1,1,2
+gold,black,PIT,Pittsburgh,Pirates,NL,Central,Eastern,Pitching,2.7,4,3,3,1,4,2,2
+navy,red,TEX,Texas,Rangers,AL,West,Central,Hitting,2.7,4,3,1,3,4,1,3
+orange,navy,DET,Detroit,Tigers,AL,Central,Eastern,Balanced,2.7,4,2,3,3,3,1,3
+lightblue,navy,TB,Tampa Bay,Rays,AL,East,Eastern,Pitching,2.6,2,2,1,2,3,4,4
+purple,black,COL,Colorado,Rockies,NL,West,Mountain,Hitting,2.6,2,1,2,4,4,3,2
+gold,red,LAA,Los Angeles,Angels,AL,West,Pacific,Pitching,2.4,2,2,4,3,1,2,3
+navy,white,NYY,New York,Yankees,AL,East,Eastern,Hitting,2.3,1,3,2,4,1,4,1
+teal,navy,SEA,Seattle,Mariners,AL,West,Pacific,Pitching,2.3,2,2,2,3,2,4,1
+navy,red,WAS,Washington,Nationals,NL,East,Eastern,Balanced,2.1,1,3,4,2,1,3,1
+orange,black,BAL,Baltimore,Orioles,AL,East,Eastern,Hitting,2.1,1,2,2,4,1,2,3
+navy,red,STL,St Louis,Cardinals,NL,Central,Central,Pitching,2.1,2,3,1,1,2,2,4
+red,white,CIN,Cincinnati,Reds,NL,Central,Eastern,Hitting,2.1,2,1,1,3,4,2,2
+white,black,CHW,Chicago,White Sox,AL,Central,Central,Balanced,2.0,2,2,4,1,1,3,1
+red,navy,MIN,Minnesota,Twins,AL,Central,Central,Hitting,2.0,3,2,1,2,3,1,2
+gold,navy,MIL,Milwaukee,Brewers,NL,Central,Central,Hitting,1.7,2,1,1,2,3,2,1
+white,navy,SD,San Diego,Padres,NL,West,Pacific,Pitching,1.7,2,1,1,1,2,4,1
+gold,green,OAK,Oakland,Athletics,AL,West,Pacific,Pitching,1.7,3,1,1,2,3,1,1
+white,red,PHI,Philadelphia,Phillies,NL,East,Eastern,Balanced,1.6,2,1,1,1,3,2,1
+red,navy,ATL,Atlanta,Braves,NL,East,Eastern,Balanced,1.3,1,1,1,1,1,2,2

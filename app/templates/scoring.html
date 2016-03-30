@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Scoring Events</h1>
+  <h3>Batting</h3>
+  {% for event in events %}
+    {% if event[0] == 'Batting' %}
+    <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+    <br>
+    {% endif %}
+  {% endfor %}
+  <h3>Baserunning</h3>
+  {% for event in events %}
+    {% if event[0] == 'Baserunning' %}
+      <span title="{{ event[3] }}">{{ event[1] }} ({{ event[2] }})</span>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
