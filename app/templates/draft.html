@@ -7,8 +7,8 @@
 <h4>Q: "I still don't understand."
 <br>A: Look at the examples below. Also, that's not a question.</h4>
 
-<table>
-  <tr>
+<table class='sortable'>
+  <thead><tr>
     <th>{{ header[4] }}</th>
     <th>{{ header[6] }}</th>
     <th>{{ header[7] }}</th>
@@ -21,7 +21,8 @@
     <th>{{ header[14] }}</th>
     <th>{{ header[15] }}</th>
     <th>{{ header[16] }}</th>
-  </tr>
+  </tr></thead>
+  <tbody>
   {% for team in teams %}
   <tr>
     <td style='color:{{ team[0] }}; background-color:{{ team[1] }}; font-size:125%;'>{{ team[3] }}<br>{{team[4] }}</td>
@@ -29,15 +30,16 @@
     <td>{{ team[7] }}</td>
     <td>{{ team[8] }}</td>
     <td>{{ team[9] }}</td>
-    <td><img src='static/stars_{{ team[10] }}.png' alt='{{ team[10] }}' height='20' width='66'></td>
-    <td><img src='static/stars_{{ team[11] }}.png' alt='{{ team[11] }}' height='20' width='66'></td>
-    <td><img src='static/stars_{{ team[12] }}.png' alt='{{ team[12] }}' height='20' width='66'></td>
-    <td><img src='static/stars_{{ team[13] }}.png' alt='{{ team[13] }}' height='20' width='66'></td>
-    <td><img src='static/stars_{{ team[14] }}.png' alt='{{ team[14] }}' height='20' width='66'></td>
-    <td><img src='static/stars_{{ team[15] }}.png' alt='{{ team[15] }}' height='20' width='66'></td>
-    <td><img src='static/stars_{{ team[16] }}.png' alt='{{ team[16] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[10]}}><img src='static/stars_{{ team[10] }}.png' alt='{{ team[10] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[11]}}><img src='static/stars_{{ team[11] }}.png' alt='{{ team[11] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[12]}}><img src='static/stars_{{ team[12] }}.png' alt='{{ team[12] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[13]}}><img src='static/stars_{{ team[13] }}.png' alt='{{ team[13] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[14]}}><img src='static/stars_{{ team[14] }}.png' alt='{{ team[14] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[15]}}><img src='static/stars_{{ team[15] }}.png' alt='{{ team[15] }}' height='20' width='66'></td>
+    <td sorttable_customkey={{team[16]}}><img src='static/stars_{{ team[16] }}.png' alt='{{ team[16] }}' height='20' width='66'></td>
   </tr>
   {% endfor %}
+  </tbody>
 </table>
 
 <h4>Examples:</h4>
