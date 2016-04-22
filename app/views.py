@@ -1,5 +1,5 @@
 from flask import render_template
-from app import app, import_teams, import_managers, import_scoring, import_rosters
+from app import app, import_teams, import_managers, import_scoring, import_rosters, import_standings
 
 @app.route('/')
 @app.route('/index')
@@ -41,7 +41,12 @@ def manager(manager_name):
 
 @app.route('/standings')
 def standings():
-    return "Under construction! Stay tuned for some kick-ass standings!"
+    latest_date, owner_standings, team_standings = import_standings.current_standings()
+    return render_template('standings.html',
+                           title = 'Standings',
+                           latest_date = latest_date,
+                           owner_standings = owner_standings,
+                           team_standings = team_standings)
 
 @app.route('/updates')
 def updates():
