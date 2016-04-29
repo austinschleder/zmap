@@ -7,20 +7,21 @@ def index():
     return render_template('index.html',
                            title = 'Home')
 
+@app.route('/standings')
+def standings():
+    latest_date, owner_standings, team_standings = import_standings.current_standings()
+    return render_template('standings.html',
+                           title = 'Standings',
+                           latest_date = latest_date,
+                           owner_standings = owner_standings,
+                           team_standings = team_standings)
+
 @app.route('/scoring')
 def scoring():
     events = import_scoring.scoring_events()
     return render_template('scoring.html',
                            title = 'Scoring',
                            events = events)
-
-@app.route('/draft')
-def draft():
-    header, teams = import_teams.team_overview()
-    return render_template('draft.html',
-                           title = 'Draft Prep',
-                           header = header,
-                           teams = teams)
 
 @app.route('/managers')
 def managers():
@@ -39,14 +40,13 @@ def manager(manager_name):
                            data = manager_data,
                            teams = manager_teams)
 
-@app.route('/standings')
-def standings():
-    latest_date, owner_standings, team_standings = import_standings.current_standings()
-    return render_template('standings.html',
-                           title = 'Standings',
-                           latest_date = latest_date,
-                           owner_standings = owner_standings,
-                           team_standings = team_standings)
+@app.route('/draft')
+def draft():
+    header, teams = import_teams.team_overview()
+    return render_template('draft.html',
+                           title = 'Draft Prep',
+                           header = header,
+                           teams = teams)
 
 @app.route('/updates')
 def updates():
