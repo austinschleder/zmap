@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <h1>Managers:</h1>
+<h1>Managers</h1>
 
-  {% for name in manager_names %}
-    <a href='/managers/{{ name }}' style='font-size:200%; '>{{ name }}</a>
-    <br>
+  {% for manager in managers %}
+  <span class="manager">
+    <h2 class="nametag">{{ manager[0] }}</h2>
+    <p>"{{ manager[1] }}"</p>
+    <img src='../static/pokemon_{{ manager[2] }}.png' alt="D'oh!" width='300' height='200' text-align='center'>
+    <p class="roster">
+    {% for team in manager[3] %}
+    {{ team[0] }} {{ team[1] }}<br>
+    {% endfor %}
+    </p>
+  </span>
   {% endfor %}
 
 {% endblock %}

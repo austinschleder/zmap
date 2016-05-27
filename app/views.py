@@ -1,5 +1,7 @@
 from flask import render_template
-from app import app, import_teams, import_managers, import_scoring, import_rosters, import_standings
+from app import app
+import pandas as pd
+from app import import_teams, import_scoring, import_updates, team_data
 
 @app.route('/')
 @app.route('/index')
@@ -9,12 +11,12 @@ def index():
 
 @app.route('/standings')
 def standings():
-    latest_date, owner_standings, team_standings = import_standings.current_standings()
+    latest_date = '2015-05-13'
+    full_scores = team_data.full_scores()
     return render_template('standings.html',
                            title = 'Standings',
                            latest_date = latest_date,
-                           owner_standings = owner_standings,
-                           team_standings = team_standings)
+                           full_scores = full_scores)
 
 @app.route('/scoring')
 def scoring():
@@ -24,21 +26,11 @@ def scoring():
                            events = events)
 
 @app.route('/managers')
-def managers():
-    manager_names = import_managers.manager_names()
-    manager_names = manager_names[1:]
+def manager_grid():
+    managers = team_data.manager_rosters()
     return render_template('managers.html',
                            title = 'Managers',
-                           manager_names = manager_names)
-
-@app.route('/managers/<manager_name>')
-def manager(manager_name):
-    manager_data = import_managers.manager_data(manager_name)
-    manager_teams = import_rosters.manager_roster(manager_name)
-    return render_template('manager.html',
-                           title = manager_name,
-                           data = manager_data,
-                           teams = manager_teams)
+                           managers = managers)
 
 @app.route('/draft')
 def draft():
@@ -48,10 +40,24 @@ def draft():
                            header = header,
                            teams = teams)
 
+@app.route('/draft/team_info')
+def draft_info():
+    header, teams = import_teams.team_overview()
+    return render_template('draft_info.html',
+                            title = 'Info',
+                            header = header,
+                            teams = teams)
+
 @app.route('/updates')
 def updates():
+    all_updates = import_updates.site_updates()
+    reversed_updates = all_updates.reverse()
+    latest = all_updates[0]
+    others = all_updates[1:]
     return render_template('updates.html',
-                           title = 'Updates')
+                           title = 'Updates',
+                           latest_update = latest,
+                           other_updates = others)
 
    
 

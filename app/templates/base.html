@@ -1,26 +1,6 @@
 <html>
   <head>
-    <style>
-      body{
-        font-family: courier;
-        background-color: rgb(150, 150, 150);
-      }
-      table, td, tr {
-        background-color: white;
-        border: 1px solid black;
-        border-collapse: collapse;
-        text-align: center;
-        padding: 5px;
-      }
-      th {
-        background-color: gray;
-        border: 1px solid black;
-        border-collapse: collapse;
-        text-align: center;
-        font-size:100%;
-        padding: 5px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
     {% if title %}
     <title>{{ title }}</title>
     {% else %}
@@ -30,7 +10,7 @@
     <script src="/static/sorttable.js"></script>
   </head>
   <body>
-    <div>
+    <div class="navbar">
       ZMAP: 
       <a href="/index">Home</a> | 
       <a href="/standings">Standings</a> | 
@@ -39,7 +19,10 @@
       <a href="/draft">Draft Prep</a> | 
       <a href="/updates">Updates</a>
     </div>
-    <hr>
-    {% block content %} {% endblock %}
+    <hr class="navbar" color=#D02020>
+    <hr class="navbar" color=#D07020>
+    <hr class="navbar" color=#108080>
+    {% block content %} 
+    {% endblock %}
   </body>
 </html>

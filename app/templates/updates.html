@@ -1,21 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1>ZMAP Updates:</h1>
+<h1>ZMAP Updates</h1>
 
-<p style='background-color:yellow;'>2016-04-21
-<br> We now have a standings page! Standings are still being calculated by hand, which means they will be updated intermittently throughout the season (AKA whenever somebody asks). They also may be inaccurate. Both these problems will be solved as soon as I can automate the process, which will be sometime between now and the last day of the season.</p>
+<div>
+  <h3 class="latest">{{ latest_update[0] }}</h3>
+  <p class="latest">{{ latest_update[1] }}</p>
+</div>
 
-<p style='background-color:white;'>2016-04-07
-<br> Rosters have been updated, and can be seen on the managers page. </p>
-
-<p style='background-color:white;'>2016-04-01
-<br> The inaugural ZMAP draft will take place in New York City the first weekend of April. Refreshments will be served.</p>
-
-<p style='background-color:white;'>2016-03-30
-<br> Welcome to the league! We're currently dealing with a bare-bones site because I'm bad at coding and needed to get it up before the draft. Check back periodically to see what sort of cool stuff I add. It'll mostly be pictures of Pokemon.</p>
-
-<p style='background-color:white;'>2016-03-21
-<br> Oh, hey, look, I'm online! Cool beans. </p>
+{% for update in other_updates %}
+<div>
+  <h3>{{ update[0] }}</h3>
+  <p>{{ update[1] }}</p>
+</div>
+{% endfor %}
 
 {% endblock %}
