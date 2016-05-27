@@ -1,4 +1,3 @@
-import csv
 import pandas as pd
 
 def raw_team_data():
