@@ -13,7 +13,7 @@
 <table class='sortable'>
   <thead><tr>
     <th>{{ header[4] }}</th>
-    <th colspan='2'>Colors</th>
+    <th>Colors</th>
     <th>{{ header[6] }}</th>
     <th>{{ header[7] }}</th>
     <th>{{ header[8] }}</th>
@@ -22,8 +22,10 @@
   {% for team in teams %}
   <tr>
     <td>{{ team[3] }} {{team[4] }}</td>
-    <td class="color1" style="background-color:{{ team[0] }}; color:{{ team[0] }};">-</td>
-    <td class="color2" style="background-color:{{ team[1] }}; color:{{ team[1] }};">-</td>
+    <td class="colors">
+      <span class="color1" style="background-color:{{ team[0] }}; color:{{ team[0] }};">----</span>
+      <span class="color2" style="background-color:{{ team[1] }}; color:{{ team[1] }};">----</span>
+    </td>
     <td>{{ team[5] }} {{ team[6] }}</td>
     <td>{{ team[7] }}</td>
     <td>{{ team[8] }}</td>
