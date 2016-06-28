@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>ZMAP History</h1>
+
+{% for update in updates %}
+<div>
+  <h3>{{ update[0] }} ({{ update[1] }})</h3>
+  <p class="latest">Winner: {{ update[2] }}</p>
+  <p>Losers: {{ update[3] }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}

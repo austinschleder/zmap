@@ -1,31 +1,31 @@
 Team,City,Nickname,Manager,Round,Points,Games
-ARI,Arizona,Diamondbacks,austin,5,3450,38
-ATL,Atlanta,Braves,maxwell,4,1193,35
-BAL,Baltimore,Orioles,christopher,1,1886,36
-BOS,Boston,Red Sox,matthew,4,2910,34
-CHC,Chicago,Cubs,christopher,2,2209,37
-CHW,Chicago,White Sox,maxwell,3,2469,35
-CIN,Cincinnati,Reds,zachary,5,1910,34
-CLE,Cleveland,Indians,patrick,4,1622,34
-COL,Colorado,Rockies,austin,4,2672,34
-DET,Detroit,Tigers,maxwell,2,1475,37
-HOU,Houston,Astros,matthew,2,1534,33
-KC,Kansas City,Royals,maxwell,1,1740,36
-LAA,Los Angeles,Angels,matthew,3,1513,36
-LAD,Los Angeles,Dodgers,patrick,2,2204,35
-MIA,Miami,Marlins,patrick,3,1888,35
-MIL,Milwaukee,Brewers,maxwell,5,1547,36
-MIN,Minnesota,Twins,patrick,5,1422,37
-NYM,New York,Mets,austin,3,1910,36
-NYY,New York,Yankees,matthew,5,1661,35
-OAK,Oakland,Athletics,austin,1,1670,35
-PHI,Philadelphia,Phillies,zachary,4,2304,34
-PIT,Pittsburgh,Pirates,patrick,1,2232,35
-SD,San Diego,Padres,zachary,1,1842,34
-SEA,Seattle,Mariners,christopher,3,2398,36
-SF,San Francisco,Giants,zachary,2,2918,36
-STL,St Louis,Cardinals,zachary,3,2789,34
-TB,Tampa Bay,Rays,christopher,5,1544,38
-TEX,Texas,Rangers,christopher,4,2212,35
-TOR,Toronto,Blue Jays,austin,2,2017,36
-WAS,Washington,Nationals,matthew,1,2274,32
+ARI,Arizona,Diamondbacks,austin,5,5531,78
+ATL,Atlanta,Braves,maxwell,4,4629,76
+BAL,Baltimore,Orioles,christopher,1,3756,77
+BOS,Boston,Red Sox,matthew,4,5433,75
+CHC,Chicago,Cubs,christopher,2,4315,76
+CHW,Chicago,White Sox,maxwell,3,5077,76
+CIN,Cincinnati,Reds,zachary,5,3998,74
+CLE,Cleveland,Indians,patrick,4,4631,75
+COL,Colorado,Rockies,austin,4,4882,74
+DET,Detroit,Tigers,maxwell,2,4295,77
+HOU,Houston,Astros,matthew,2,4277,74
+KC,Kansas City,Royals,maxwell,1,3591,77
+LAA,Los Angeles,Angels,matthew,3,3469,76
+LAD,Los Angeles,Dodgers,patrick,2,4391,74
+MIA,Miami,Marlins,patrick,3,4287,76
+MIL,Milwaukee,Brewers,maxwell,5,3540,74
+MIN,Minnesota,Twins,patrick,5,4036,77
+NYM,New York,Mets,austin,3,4002,75
+NYY,New York,Yankees,matthew,5,3480,74
+OAK,Oakland,Athletics,austin,1,3488,76
+PHI,Philadelphia,Phillies,zachary,4,4220,76
+PIT,Pittsburgh,Pirates,patrick,1,4761,75
+SD,San Diego,Padres,zachary,1,4092,76
+SEA,Seattle,Mariners,christopher,3,4639,76
+SF,San Francisco,Giants,zachary,2,5641,75
+STL,St Louis,Cardinals,zachary,3,5203,75
+TB,Tampa Bay,Rays,christopher,5,3896,77
+TEX,Texas,Rangers,christopher,4,4516,76
+TOR,Toronto,Blue Jays,austin,2,4515,75
+WAS,Washington,Nationals,matthew,1,5499,74

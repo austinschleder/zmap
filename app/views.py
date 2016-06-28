@@ -1,7 +1,7 @@
 from flask import render_template
 from app import app
 import pandas as pd
-from app import import_teams, import_scoring, import_updates, team_data
+from app import import_teams, import_scoring, import_updates, import_history, team_data
 
 @app.route('/')
 @app.route('/index')
@@ -11,7 +11,7 @@ def index():
 
 @app.route('/standings')
 def standings():
-    latest_date = '2015-05-13'
+    latest_date = '2015-06-26'
     full_scores = team_data.full_scores()
     return render_template('standings.html',
                            title = 'Standings',
@@ -47,6 +47,14 @@ def draft_info():
                             title = 'Info',
                             header = header,
                             teams = teams)
+
+@app.route('/history')
+def history():
+    updates = import_history.historic_events()
+    updates = updates[1:]
+    return render_template('history.html',
+                           title = 'History',
+                           updates = updates)
 
 @app.route('/updates')
 def updates():
