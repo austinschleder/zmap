@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Kicker Challenge</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Austin's Average Score</th>
+      <th>Weeks</th>
+      <th>Thomas's Average Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ data_overview['ajs_avg'] }}</td>
+      <td>{{ data_overview['max_week'] }}</td>
+      <td>{{ data_overview['tfd_avg'] }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Austin's Kicker</th>
+      <th>Score</th>
+      <th>Differential</th>
+      <th>Score</th>
+      <th>Thomas's Kicker</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for week in all_kickers %}
+    <tr>
+      <td>{{ week[2] }}</td>
+      <td>{{ week[4] }}</td>
+      <td>{{ week[0] }}</td>
+      <td>{{ week[8] }}</td>
+      <td>{{ week[6] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

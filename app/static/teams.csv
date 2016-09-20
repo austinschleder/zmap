@@ -1,31 +1,31 @@
 Team,City,Nickname,Manager,Round,Points,Games
-ARI,Arizona,Diamondbacks,austin,5,6603,106
-ATL,Atlanta,Braves,maxwell,4,6522,106
-BAL,Baltimore,Orioles,christopher,1,4994,105
-BOS,Boston,Red Sox,matthew,4,7287,105
-CHC,Chicago,Cubs,christopher,2,6923,105
-CHW,Chicago,White Sox,maxwell,3,6452,104
-CIN,Cincinnati,Reds,zachary,5,6276,105
-CLE,Cleveland,Indians,patrick,4,7513,105
-COL,Colorado,Rockies,austin,4,6412,105
-DET,Detroit,Tigers,maxwell,2,6484,106
-HOU,Houston,Astros,matthew,2,6617,104
-KC,Kansas City,Royals,maxwell,1,5043,107
-LAA,Los Angeles,Angels,matthew,3,5260,106
-LAD,Los Angeles,Dodgers,patrick,2,6294,105
-MIA,Miami,Marlins,patrick,3,6567,105
-MIL,Milwaukee,Brewers,maxwell,5,5010,105
-MIN,Minnesota,Twins,patrick,5,6202,106
-NYM,New York,Mets,austin,3,5520,104
-NYY,New York,Yankees,matthew,5,5068,105
-OAK,Oakland,Athletics,austin,1,5305,104
-PHI,Philadelphia,Phillies,zachary,4,6713,106
-PIT,Pittsburgh,Pirates,patrick,1,6534,105
-SD,San Diego,Padres,zachary,1,6096,103
-SEA,Seattle,Mariners,christopher,3,6278,105
-SF,San Francisco,Giants,zachary,2,7114,104
-STL,St Louis,Cardinals,zachary,3,7203,104
-TB,Tampa Bay,Rays,christopher,5,6265,105
-TEX,Texas,Rangers,christopher,4,6379,105
-TOR,Toronto,Blue Jays,austin,2,7158,105
-WAS,Washington,Nationals,matthew,1,7335,103
+ARI,Arizona,Diamondbacks,austin,5,1042,149
+ATL,Atlanta,Braves,maxwell,4,9497,149
+BAL,Baltimore,Orioles,christopher,1,7637,149
+BOS,Boston,Red Sox,matthew,4,9716,149
+CHC,Chicago,Cubs,christopher,2,10184,149
+CHW,Chicago,White Sox,maxwell,3,8894,149
+CIN,Cincinnati,Reds,zachary,5,8866,149
+CLE,Cleveland,Indians,patrick,4,10895,150
+COL,Colorado,Rockies,austin,4,9368,149
+DET,Detroit,Tigers,maxwell,2,8279,149
+HOU,Houston,Astros,matthew,2,8582,149
+KC,Kansas City,Royals,maxwell,1,7721,150
+LAA,Los Angeles,Angels,matthew,3,7722,150
+LAD,Los Angeles,Dodgers,patrick,2,8795,149
+MIA,Miami,Marlins,patrick,3,8407,149
+MIL,Milwaukee,Brewers,maxwell,5,7498,149
+MIN,Minnesota,Twins,patrick,5,9143,149
+NYM,New York,Mets,austin,3,8322,150
+NYY,New York,Yankees,matthew,5,7348,149
+OAK,Oakland,Athletics,austin,1,6917,149
+PHI,Philadelphia,Phillies,zachary,4,8341,149
+PIT,Pittsburgh,Pirates,patrick,1,8458,149
+SD,San Diego,Padres,zachary,1,8569,149
+SEA,Seattle,Mariners,christopher,3,8387,149
+SF,San Francisco,Giants,zachary,2,10009,149
+STL,St Louis,Cardinals,zachary,3,9254,149
+TB,Tampa Bay,Rays,christopher,5,8516,149
+TEX,Texas,Rangers,christopher,4,9144,149
+TOR,Toronto,Blue Jays,austin,2,8268,149
+WAS,Washington,Nationals,matthew,1,11436,149

@@ -1,7 +1,9 @@
 from flask import render_template
 from app import app
 import pandas as pd
+import nfldb
 from app import import_teams, import_scoring, import_updates, import_history, team_data
+from app import kicker_challenge as kc
 
 @app.route('/')
 @app.route('/index')
@@ -11,7 +13,7 @@ def index():
 
 @app.route('/standings')
 def standings():
-    latest_date = '2015-08-01'
+    latest_date = '2015-09-18'
     full_scores = team_data.full_scores()
     return render_template('standings.html',
                            title = 'Standings',
@@ -67,5 +69,15 @@ def updates():
                            latest_update = latest,
                            other_updates = others)
 
-   
+@app.route('/kc')
+def kicker_challenge():
+    kicker_data = kc.import_kicker_scores()
+    data_overview = kc.get_data_overview(kicker_data)
+    ajs = kc.get_owner_lineup(kicker_data, 'austin')
+    tfd = kc.get_owner_lineup(kicker_data, 'thomas')
+    all_kickers = ajs.merge(tfd, on=['week'], sort=True, suffixes=['_ajs', '_tfd'])
+    return render_template('kicker_challenge.html',
+                           title='Kickers',
+                           data_overview=data_overview,
+                           all_kickers=all_kickers.values.tolist())
 
