@@ -81,3 +81,7 @@ def kicker_challenge():
                            data_overview=data_overview,
                            all_kickers=all_kickers.values.tolist())
 
+@app.route('/formula')
+def formula():
+    return render_template('formula.html')
+
