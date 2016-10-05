@@ -1,7 +1,26 @@
-{% extends "base.html" %}
-{% block content %}
-
 <h1>The Formula</h1>
 
-{% endfor %}
-{% endblock %}
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for team in q_scores %}
+    <tr>
+      <td style="text-align:center;">{{ team[0] }}</td>
+      <td style="text-align:center;">{{ team[1] }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+	  <td style="text-align:center;">----------</td>
+	  <td style="text-align:center;">----------</td>
+	</tr>
+	<tr>
+	  <td style="text-align:center;">Home Field Advantage</td>
+	  <td style="text-align:center;">{{ hfa }}</td>
+	</tr>
+  </tbody>
+</table>

@@ -4,6 +4,7 @@ import pandas as pd
 import nfldb
 from app import import_teams, import_scoring, import_updates, import_history, team_data
 from app import kicker_challenge as kc
+from app import import_q_scores as qs
 
 @app.route('/')
 @app.route('/index')
@@ -83,5 +84,9 @@ def kicker_challenge():
 
 @app.route('/formula')
 def formula():
-    return render_template('formula.html')
-
+    q_scores = qs.get_q_scores().values.tolist()
+    hfa = qs.get_hfa()['hfa'].values.tolist()[0]
+    return render_template('formula.html',
+                           title='Formula',
+                           q_scores=q_scores,
+                           hfa=hfa)
