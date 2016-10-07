@@ -14,7 +14,7 @@ def index():
 
 @app.route('/standings')
 def standings():
-    latest_date = '2015-09-18'
+    latest_date = 'END OF SEASON'
     full_scores = team_data.full_scores()
     return render_template('standings.html',
                            title = 'Standings',
