@@ -5,12 +5,13 @@ import numpy as np
 import statsmodels.formula.api as sm
 from pandas.stats.api import ols
 import scipy
+import sys
 
 db = nfldb.connect()
 
-def get_game_scores(season):
+def get_game_scores(season, max_week=17):
 	q = nfldb.Query(db)
-	q.game(season_year=season, season_type='Regular')
+	q.game(season_year=season, season_type='Regular', week=range(max_week))
 	weeks = q.sort(('gsis_id', 'asc')).as_games()
 	week_data = [[w.home_team, w.away_team, w.home_score - w.away_score] for w in weeks]
 	scores = pd.DataFrame(week_data, columns=['home_team', 'away_team', 'point_diff'])
@@ -41,7 +42,8 @@ def create_formula_matrix(scores, all_teams):
 	hfa.to_csv('app/static/hfa.csv')
 
 if __name__ == '__main__':
-	season = 2016
-	scores = get_game_scores(season)
+	prediction_week = int(sys.argv[1]) if len(sys.argv) > 1 else 17
+	season = int(sys.argv[2]) if len(sys.argv) > 2 else 2016
+	scores = get_game_scores(season, prediction_week)
 	all_teams = get_all_teams(season)
 	create_formula_matrix(scores, all_teams)
