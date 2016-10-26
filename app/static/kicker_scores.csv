@@ -1,7 +1,7 @@
 week,owner,kicker,team,score
 1,austin,Matt Prater,DET,7.0
 1,thomas,Sebastian Janikowski,OAK,8.0
-2,austin,Jason Myers,JAX,1.0
+2,austin,Jason Myers,JAC,1.0
 2,thomas,Josh Lambo,SD,8.0
 3,austin,Wil Lutz,NO,8.0
 3,thomas,Matt Bryant,ATL,8.0
@@ -11,3 +11,5 @@ week,owner,kicker,team,score
 5,thomas,Josh Lambo,SD,7.0
 6,austin,Dan Carpenter,BUF,10.0
 6,thomas,Nick Novak,HOU,7.0
+7,austin,Brandon McManus,DEN,9.0
+7,thomas,Jason Myers,JAC,11.0
